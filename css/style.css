@@ -27,6 +27,7 @@ body {
   background-color: none;
   border: 1px solid #999;
   border-radius: 5px;
+  color: rgb(13, 12, 38);
   font-size: 14px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
@@ -127,12 +128,61 @@ body {
   background-color: none;
   border: 1px solid #999;
   border-radius: 5px;
+  color: rgb(13, 12, 38);
   font-size: 14px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
 }
 .note-panel .save:hover,
 .note-panel .cancel:hover {
+  background-color: #333;
+  color: #ddd;
+}
+
+.delete-all-popup {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.delete-all-popup__items {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 200px;
+  width: 400px;
+  color: rgb(13, 12, 38);
+  background-color: white;
+  border-radius: 10px;
+}
+.delete-all-popup h2 {
+  margin-bottom: 20px;
+}
+.delete-all-popup p {
+  margin-bottom: 20px;
+}
+.delete-all-popup button {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 10px 30px 10px;
+  padding: 12px 25px;
+  background-color: none;
+  border: 1px solid #999;
+  border-radius: 5px;
+  color: rgb(13, 12, 38);
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.delete-all-popup button:hover {
   background-color: #333;
   color: #ddd;
 }/*# sourceMappingURL=style.css.map */

@@ -9,7 +9,7 @@
 body {
 	height: 100vh;
 	background-color: rgb(243, 243, 243);
-	font-family: "Montserrat", sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 .wrapper {
 	max-width: 1200px;
@@ -27,12 +27,11 @@ body {
 	.add {
 		margin-right: 20px;
 	}
-	h1{
-		color: $primary-color
+	h1 {
+		color: $primary-color;
 	}
-	.fa-sticky-note{
+	.fa-sticky-note {
 		margin-right: 15px;
-		
 	}
 }
 .icon {
@@ -70,7 +69,7 @@ body {
 }
 .note-panel {
 	// display: flex;
-    display: none;
+	display: none;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
@@ -101,7 +100,7 @@ body {
 		border-radius: 6px;
 		font-size: 16px;
 	}
-	.text{
+	.text {
 		min-height: 100px;
 	}
 	.error {
@@ -111,6 +110,43 @@ body {
 	}
 	.save,
 	.cancel {
+		@include button();
+	}
+}
+.delete-all-popup {
+	display: none;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.9);
+
+	&__items {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		height: 200px;
+		width: 400px;
+		color: $primary-color;
+		background-color: white;
+		border-radius: 10px;
+	}
+	h2 {
+		margin-bottom: 20px;
+	}
+	p {
+		margin-bottom: 20px;
+	}
+	button {
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		margin: 10px 30px 10px;
 		@include button();
 	}
 }
